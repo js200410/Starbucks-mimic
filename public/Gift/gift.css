@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+    font-family: "Raleway", sans-serif;
+    background: #c7d3c7;
+    overflow-x: hidden;
+    margin:0;
+}
+.bold{
+    font-weight:bold
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    cursor: pointer;
+}
+
+.nav-links{
+    width:100%;
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding:3vh 8vw;
+    text-transform: capitalize;
+    font-size:1.2vw;
+    box-shadow: 2px 2px 20px 5px rgb(2, 78, 46);
+    position: fixed;
+    z-index: 44;
+    background:rgb(71, 115, 101);
+    top:0%
+ 
+   
+}
+.nav-links .left-link,.right-link{
+    display:flex;
+    justify-content: center;
+    gap:4vw;
+
+}
+.nav-links .left-link{
+  display: flex;
+  justify-content: center;
+  align-items:center
+}
+.nav-links .left-link li:first-child img{
+    width: 3vw
+}
+.left-link .home-nav-links ,.right-link .home-nav-links{
+    text-decoration: none;
+    height:10vh;
+    color: rgb(1, 44, 1);
+    color:antiquewhite
+}
+.right-link li:first-child{
+    display: flex;
+    gap:1vw;
+    justify-content: center;
+    align-items: center;
+    padding:0vh 1vw;
+    width:20vw;
+    background: white;
+    height:5vh;
+    font-size: larger;
+    border-radius: 20vw;
+    box-shadow: 2px 2px green;
+}
+.right-link li:first-child input{
+    border: none;
+    width:80%;
+    outline:none
+}
+#gift-card-filters{
+    margin-top:22vh;
+    cursor: pointer;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-bottom:5vh;
+    background: white;
+    height:5vh;
+    align-items: center;
+    padding: 1vh 1vw;
+box-shadow: 4px 4px 5px 6px white;
+}
+.cards-link{
+    font-size: 1.1vw;
+    font-weight:700;
+}
+.gift-cards{
+    display:flex;
+    gap:6vw;
+    flex-wrap: wrap;
+   transform: translateX(2vw);
+   padding:2vh 5vw;
+}
+.filtered-cards{
+    background: #e4f4e4;
+    width:calc(100%/3 - 5rem);
+    height:28vh;
+    position: relative;
+    border-radius:15px;
+    box-shadow:4px 5px 5px rgb(68, 120, 93)
+
+    
+}
+.image-card{
+    height:4vh;
+    transform: translate(-5vw,4vh)
+    
+}
+.image-card img{
+    box-shadow:4px 5px 5px rgb(68, 120, 93);
+    border-radius: 15px;
+
+}
+.description{
+    width:60%;
+    float: right;
+}
+
+.add-item-btn{
+    position: absolute;
+    bottom:8%;
+    padding:1vh 3vw;
+    border-radius: 35px;
+    background: rgb(68, 129, 117);
+    color:white;
+    border:none
+}
+.add-item-btn:hover{
+    background: rgb(100, 122, 117);
+    border:1px solid  rgb(68, 129, 117);
+}
+.active{
+    color:rgba(2, 131, 95, 0.673);
+    border:none;
+    border-bottom: 3px solid black;
+    padding: 8px ;
+}
+.dialog{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding:10vh 4vw;
+display: none;
+}
+.selection-btn{
+display: flex;
+justify-content: space-around;
+
+}
+.selection-btn  button{
+
+    bottom:8%;
+    padding:1vh 3vw;
+    border-radius: 35px;
+    background: rgb(68, 129, 117);
+    color:white;
+    border:none
+
+}
+.pop-msg{
+        border-radius:5px;
+        box-shadow:2px 2px 10px #014c33;
+        height:28vh;
+        width:28vw;
+        background: #f7f2f2;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+}   

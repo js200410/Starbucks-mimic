@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <main>
+      <div class="dialog">
+        
+      </div>
+        <nav id="navbar">
+            <ul class="nav-links">
+                <div class="left-link">
+                    <li><a title="Starbucks Logo" href="/"><img src="https://www.starbucks.in/assets/icon/logo.png" alt="Logo" class="logo"></a></li>
+                    <li><a id="home" href="/"  class="home-nav-links">home</a></li>
+                    <li><a id="gift" href="/Gift" class="home-nav-links">gift</a></li>
+                    <li><a id="order" href=""  class="home-nav-links">order</a></li>
+                    <li><a id="pay" href=""  class="home-nav-links">pay</a></li>
+                    <li><a id="store" href="/Store" class="home-nav-links">store</a></li>
+                 </div>
+                 <div class="right-link">
+                    <li><ion-icon name="search-outline" id="search-logo"></ion-icon><input placeholder='Looking for something specific?' type="text" name="search-items" class="search-items" ></li>
+                    <li><a href="/login"><img src="https://www.starbucks.in/assets/icon/account_thin.svg" alt="" ></a></li>
+                    <li><a href="/my-cart">Cart</a></li>
+
+                 </div>
+            </ul>
+        </nav>
+        <div class="home">
+        <section>
+            <p>Home>Orders</p>
+            <!-- <div class="black-section">
+
+            </div> -->
+            <nav class="filters">
+                <ul class="filters-links nav-links" class="order-links home-nav-links ">
+                    <li id="best-seller" class="order-links home-nav-links ">Bestseller</li>
+                    <li id="drinks" class="order-links home-nav-links ">Drinks</li>
+                    <li id="food" class="order-links home-nav-links ">Food</li>
+                    <li id="mugs" class="order-links home-nav-links ">Merchandise</li>
+                    <li id="coffee-at-home" class="order-links home-nav-links ">Coffee At Home</li>
+                    <li id="ready-to-eat" class="order-links home-nav-links ">Ready to Eat</li>
+                </ul>
+            </nav>
+        </section>
+        <div id="items">
+            
+        </div>
+    </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <script src="../my-cart/cart.js"></script>
+</body>
+</html>

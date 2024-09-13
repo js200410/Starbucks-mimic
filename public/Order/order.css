@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+    font-family: "Raleway", sans-serif;
+    background: #c7d3c7;
+    overflow-x: hidden;
+    margin:0;
+}
+.bold{
+    font-weight:bold
+}
+.flex{
+    display: flex;
+    gap:4vw;
+    margin-top:6vh;
+    justify-content: baseline;
+    align-items: center;
+    }
+button{
+    cursor: pointer;
+}
+
+.nav-links{
+    width:100%;
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding:3vh 8vw;
+    text-transform: capitalize;
+    font-size:1.2vw;
+    position: fixed;
+    top:0%;
+    z-index: 999;
+    cursor: pointer;
+    background:rgb(71, 115, 101);
+ 
+   
+}
+.nav-links .left-link,.right-link{
+    display:flex;
+    justify-content: center;
+    gap:4vw;
+
+}
+.nav-links .left-link{
+  display: flex;
+  justify-content: center;
+  align-items:center
+}
+.nav-links .left-link li:first-child img{
+    width: 3vw
+}
+.left-link .home-nav-links ,.right-link .home-nav-links{
+    text-decoration: none;
+    height:10vh;
+    color:antiquewhite
+}
+.right-link li:first-child{
+    display: flex;
+    gap:1vw;
+    justify-content: center;
+    align-items: center;
+    padding:0vh 1vw;
+    width:20vw;
+    background: white;
+    height:5vh;
+    font-size: larger;
+    border-radius: 20vw;
+    box-shadow: 2px 2px green;
+}
+.right-link li:first-child input{
+    border: none;
+    width:80%;
+    outline:none
+}
+section{
+    margin-top: 15vh;
+}
+.black-section{
+    height: 30vh;
+    width:100%;
+    background: #000;
+}
+.bold{
+    font-weight: 900;
+}
+.center{
+    text-align: center;
+}
+.filters-links{
+    position:static;
+    margin:1vh 0;
+    color:antiquewhite
+}
+#items{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1vw;
+    padding: 6vh 0;
+    padding-left:8vw;
+}
+.items button,#items button{
+padding:8px 20px;
+border-radius: 3vw;;
+background: rgb(88, 122, 88);
+color:white;
+}
+ .starbuck-item{
+        height:28vh;
+        width:28vw;
+        background: #f7f2f2;
+        padding:2vh 1vw;
+        display: flex;
+        font-size:12px;
+        justify-content: center;
+        align-items: center;
+        line-height: 2.5vh;
+        gap:2vw;
+        border-radius:5px;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        box-shadow:2px 2px 10px #014c33;
+    }
+    .starbuck-item:hover{
+        box-shadow:2px 2px 20px #166a4e;
+
+    }
+.starbuck-item img{
+   height:15vh;
+   width:8vw;
+   border-radius:50%;
+}
+.recent-search{
+        margin-top:15vh;
+        font-size: 10px;
+        font-family:sans-serif;
+        font-weight:400;
+        
+    
+}
+.padding{
+    padding:5vh 4vw;
+}
+.search-bar{
+    background: #393b3b;
+    height:20vh;
+    width: 100vw;
+    margin-top:-0.25vh;
+}
+.search-bar input{
+    height:5vh;
+    border-radius: 20px;
+ 
+}
+.items{
+    display: flex;
+    gap:1vw;
+    flex-wrap: wrap;
+}
+
+.width{
+    width:100vw
+}
+.no-item { 
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ margin-top:40vh
+}
+.no-item h1{
+    font-size: 30px;
+    margin-top:2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inline-block{
+    display: inline-block;
+}
+.active{
+    color: rgb(0, 37, 19) !important;
+    border-bottom: 2px solid black;
+padding: 3px;}
+.dialog{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding:10vh 4vw;
+display: none;
+}
+.selection-btn{
+display: flex;
+justify-content: space-around;
+
+}
+.selection-btn  button{
+
+    bottom:8%;
+    padding:1vh 3vw;
+    border-radius: 35px;
+    background: rgb(68, 129, 117);
+    color:white;
+    border:none
+
+}
+.pop-msg{
+        border-radius:5px;
+        box-shadow:2px 2px 10px #014c33;
+        height:28vh;
+        width:28vw;
+        background: #f7f2f2;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+}   

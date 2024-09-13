@@ -1,0 +1,437 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+    font-family: "Raleway", sans-serif;
+    background: #c7d3c7;
+    overflow-x: hidden;
+    margin:0;
+}
+.bold{
+    font-weight:bold
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    cursor: pointer;
+}
+
+.nav-links{
+    width:100%;
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding:3vh 8vw;
+    text-transform: capitalize;
+    font-size:1.2vw;
+    box-shadow: 2px 2px 20px 5px rgb(2, 78, 46);
+    position: fixed;
+    z-index: 44;
+    background:rgb(71, 115, 101);
+ 
+   
+}
+.nav-links .left-link,.right-link{
+    display:flex;
+    justify-content: center;
+    gap:4vw;
+
+}
+.nav-links .left-link{
+  display: flex;
+  justify-content: center;
+  align-items:center
+}
+.nav-links .left-link li:first-child img{
+    width: 3vw
+}
+.left-link .home-nav-links ,.right-link .home-nav-links{
+    text-decoration: none;
+    height:10vh;
+    color: rgb(1, 44, 1);
+    color:antiquewhite
+}
+.right-link li:first-child{
+    display: flex;
+    gap:1vw;
+    justify-content: center;
+    align-items: center;
+    padding:0vh 1vw;
+    width:20vw;
+    background: white;
+    height:5vh;
+    font-size: larger;
+    border-radius: 20vw;
+    box-shadow: 2px 2px green;
+}
+.right-link li:first-child input{
+    border: none;
+    width:80%;
+    outline:none
+}
+.section-swiper{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    padding:4vw;
+  
+}
+.swiper{
+    display: flex;
+    justify-content: center;
+    height:60vh;
+    background: url('https://th.bing.com/th/id/OIP.NCvBmkMkFqwtjzfnQgsmogHaET?rs=1&pid=ImgDetMain');
+    width:80vw;
+    position: relative;
+    border-radius: 30px;
+    margin-top:20vh; 
+ 
+}
+.swiper-wrapper{
+height:100%;
+
+
+}
+.swiper-slide{
+    text-transform: capitalize;
+}
+.swiper-button-prevs,.swiper-button-nexts{
+    position: absolute;
+    border-radius: 50%;
+    top:50%;
+    color:rgb(0, 48, 0);
+    font-size: 4vw;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.swiper-button-nexts{
+left:95%
+}
+.barista{
+    position:relative;
+    height:40vh;
+    background:rgb(214, 243, 214);
+    padding:4vh 6vw;
+   margin-left:20vw;
+   white-space: nowrap;
+}
+.barista-btn{
+height:7vh;
+width: 3.5vw;
+border-radius: 50%;
+font-size: 1.7vw;
+z-index:999
+}
+.barista h1
+{
+ text-align: left ;
+ margin-bottom:3vh 
+ 
+}
+.barista-item{
+    height:20vh;
+    width:25vw;
+    background: #f7f2f2;
+    padding-top:2vh
+}
+
+.barista button{
+    margin-top:-3vh
+}
+.left{
+position:absolute;
+left: 5%;
+top:50%;
+}
+.right{
+position:absolute;
+left: 76%;
+top:50%;
+}
+.intro-slide{
+    display:flex;
+justify-content: center;
+    width:100%;
+    position:relative;
+    gap:5vw;
+    text-transform: capitalize;
+    line-height: 4vh;
+    font-size:0.9vw ;
+    
+}
+.intro-slide .intro{
+    padding: 20vh 10vw;
+    width:80%;
+}
+.intro-slide .intro button{
+    width:8vw;
+    height:4vh;
+    border-radius: 20px;
+    margin-top:3vh ;
+    background: rgb(3, 61, 3,0.1);
+    border: 2px solid rgb(1, 40, 1);
+}
+ .intro-img img{
+    position:absolute;
+    width:25vw;
+    right:10%;
+    top:0%;
+    transform: rotate(-15deg);
+    z-index:5
+}
+
+.absolute{
+    position: absolute;
+    right:-10%;
+    background: rgb(4, 73, 4);
+    width:30vw;
+    top:-30%;
+    height:60vw;
+    border-radius: 10px;
+    transform: rotate(35deg);
+}
+.espresso{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    background: url('https://cdn.pixabay.com/photo/2020/04/24/05/29/starbucks-5085117_1280.jpg');
+    background-repeat: none;
+    background-position: center;
+
+}
+.espresso-intro{
+    width:calc(100%/2);
+    height:100%;
+    color:antiquewhite;
+    padding: 20vh 10vw;
+    background: rgb(2, 50, 2);
+    line-height: 4.2vh;
+}
+ .green , .rewards-desc button,.learn-more-content button{
+    width:10vw;
+    height:5vh;
+    margin-top: 2vh;
+    border-radius: 20px;
+    background: rgb(160, 202, 160);
+    border:2px solid antiquewhite;
+    color:white
+} 
+.espresso-img{
+    /* position:relative */
+    background: #000;
+
+  
+}
+.espresso-img img{
+    position:absolute; 
+    top:0%;
+    width:20vw;
+    right: 0%;
+}
+.rewards{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background:white;
+    position: relative
+}
+.rewards-desc{
+    width: calc(100%/2);
+    padding: 20vh 10vw;
+    line-height: 4.2vh;
+
+
+}
+.rewards-img{
+    background: #DCA47C;
+    transform: rotate(-30deg);
+    width: 60%;
+    border-radius: 30%;
+    position: absolute;
+    height: 100%;
+    right: -20%;
+    top:5%
+}
+.rewards-img img{
+    width:30vw;
+    position: absolute;
+    bottom:-20%;
+    opacity: 1;
+    transform: rotate(50deg);
+
+}
+
+.handcraft-curation{
+ 
+    width:100%;
+
+}
+.handcraft-curation>h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 4vh;
+}
+.handcraft-images{
+    background: #244d42;
+    width:100%;
+    height: 150vh;;
+    margin-top:20vh;
+    border-start-end-radius: 5vw;
+    border-start-start-radius: 5vw;
+    display: flex;
+    justify-content: center;
+    gap:2vw;
+    flex-wrap: wrap;
+    padding:4vh 4vw
+}
+.handcraft-images .img{
+    width:calc(100%/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-46%);
+    color:antiquewhite
+}
+.handcraft-images img{
+    width:9vw;
+    height:16vh;
+    border-radius: 50%;
+    margin-bottom: 5vh;
+}
+.barista img{
+    border-radius: 10px;
+    height:10vh;
+    width:6vw;
+}
+/*+++++++++++++++++++++++++++++++++++++++*/
+.learn-more{
+    height:60vh;
+    width:100vw;
+    padding:2vh 2vw;
+    color:antiquewhite
+}
+.learn-more h2{
+    display: inline-block;
+    font-size: 1.8vw;
+}
+.learn-more a{
+    float:right;
+    font-size:0.9vw;
+
+}
+.learn-more-content:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url('https://images.pexels.com/photos/302902/pexels-photo-302902.jpeg?auto=compress&cs=tinysrgb&w=600');
+    height:100%;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+   
+}
+.learn-more-content{ 
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('https://images.pexels.com/photos/302902/pexels-photo-302902.jpeg?auto=compress&cs=tinysrgb&w=600');
+    height:100%;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    cursor: pointer;
+    margin-top: 6vh;
+    border-radius: 2vw;
+    padding:1vh 2vw
+    
+}
+.learn-more-content h1,.learn-more-content p{
+    text-align: left;
+    transform: translateY(30vh);
+    margin:2vh 0;
+}
+.learn-more button{
+    transform: translateY(30vh);
+}
+footer{
+    height:130vh;
+    width:100%;
+    background: #003a2a;
+    padding:20vh 2vw;
+    display: grid;
+    position: relative;
+    color:#fff;
+    line-height: 5vh;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    text-transform: capitalize;
+    
+}
+footer div{
+ width:15vw
+}
+footer h5{
+    font-size: 1vw;
+}
+footer p{
+    font-size: 1vw;
+}
+footer h2{
+text-transform: uppercase;
+}
+.social-media{
+    display: flex;
+    gap:2vw;
+    margin: auto;
+    padding-top:4vh;
+    font-size:2vw
+}
+.download{
+    height:4vw;
+    margin-bottom: 2vw;
+    width:12vw;
+    border-radius:10px
+}
+.line{
+    width:100vw;
+    position:absolute;
+    bottom:0%;
+    padding:3vh 4vw
+}
+.line ul{
+    display: flex;
+    gap:1vw;
+    list-style: none;
+    font-size:0.6vw;
+    width:100vw;
+}
+.line ul li:nth-child(5){
+    margin-left: 55vw;
+}
+.barista-item-container {
+    display: flex;
+    overflow: hidden; /* Ensures the overflow is hidden */
+    white-space: nowrap; /* Keeps items in a single line */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.barista-item {
+    display: inline-block; /* Ensures items are inline *//* Adjust this based on the number of visible items */
+    margin-right: 3%; /* Adjust gap between items */
+}
+
+.flex {      
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+a.active{
+    color: black !important;
+    border-bottom: 2px solid black;;
+}

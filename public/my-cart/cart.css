@@ -1,0 +1,112 @@
+.active{
+    color:black
+} 
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x:hidden ;
+}
+.cart-name-img{
+    display: flex;
+    gap:3vw;
+}
+.cart-item-display{
+    display: flex;
+    height:10vh;
+    width:90vw;
+    background: rgb(132, 165, 132);
+    margin-top:5vh;
+    align-items: center;
+    gap:10vw;
+    box-shadow:4px 5px 5px rgb(68, 120, 93);
+    overflow: hidden;
+    padding:1vh 1vw;
+
+
+}
+.cart{
+    width:100%;
+    padding:5vh 5vw;
+    background:#e4f4e4;
+    margin-top:10vh;
+}
+.cart-name-img,.cart-item-display p{
+    width:calc(100% / 3)
+}
+.cart-item-display input{
+    width: 10vw;
+    text-align: center;
+}
+.bold{
+    font-weight:bold
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    cursor: pointer;
+}
+
+.nav-links{
+    width:90vw;
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding:3vh 8vw;
+    text-transform: capitalize;
+    font-size:1.2vw;
+    box-shadow: 2px 2px  5px rgb(2, 78, 46);
+    position: fixed;
+    z-index: 44;
+    background:rgb(71, 115, 101);
+    top:0%;
+    left:0%;
+ 
+   
+}
+.nav-links .left-link,.right-link{
+    display:flex;
+    justify-content: center;
+    gap:4vw;
+
+}
+.nav-links .left-link{
+  display: flex;
+  justify-content: center;
+  align-items:center
+}
+.nav-links .left-link li:first-child img{
+    width: 3vw
+}
+.left-link .home-nav-links ,.right-link .home-nav-links{
+    text-decoration: none;
+    height:10vh;
+    color: rgb(1, 44, 1);
+    color:antiquewhite
+}
+.right-link li:first-child{
+    display: flex;
+    gap:1vw;
+    justify-content: center;
+    align-items: center;
+    padding:0vh 1vw;
+    width:20vw;
+    background: white;
+    height:5vh;
+    font-size: larger;
+    border-radius: 20vw;
+    box-shadow: 2px 2px  rgb(2, 58, 2);
+}
+.right-link li:first-child input{
+    border: none;
+    width:80%;
+    outline:none
+}
+.button{
+    padding:1vh 3vw;
+    border-radius: 35px;
+    background:rgb(225, 211, 184);
+    color:black;
+    font-weight:bold;
+    border:none;
+}
