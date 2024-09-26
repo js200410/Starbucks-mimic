@@ -29,3 +29,4 @@ Cart and payment integration (not yet implemented)
 Dynamic product pages with more information
 Enhanced UI/UX for a more polished look
 Backend integration for order and payment processing
+"# starbucks-mimic" 
