@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay</title>
+    <link rel="stylesheet" href="../login/login.css">
+    <link rel="stylesheet" href="../order/order.css">
+</head>
+<body id="payment-form-body">
+      <nav id="navbar" >
+            <ul class="nav-links payment-navbar">
+                <div class="left-link">
+                    <li><a id="home" href="/"  class="home-nav-links">home</a></li>
+                    <li><a id="gift" href="/Gift" class="home-nav-links">gift</a></li>
+                    <li><a id="order" href="/Order"  class="home-nav-links">order</a></li>
+                    <li><a id="pay" href="/Pay"  class="home-nav-links">pay</a></li>
+                 </div>
+                 <div>
+                    <li><a href="/my-cart" class="home-nav-links text-white">Cart<ion-icon name="cart-outline"></ion-icon></a></li>
+
+
+                 </div>
+            </ul>
+        </nav>
+    <!----mock payment section-->
+<div class="grid" id="payment-form-div">
+    <form id="payment-form" class="grid">
+        <div>
+            <label for="card-number" class="block">Card Number </label>
+            <input type="text" placeholder="1234 3445 3453 3454" id="card-number" required/>
+        </div>
+        <div>
+            <label for="expiry-date" class="block">Expiry Date</label>
+            <input type="text" placeholder="MM/YY" id="expiry" required/>
+        </div>
+        <div>
+            <label for="cvv" class="block">CVV</label>
+            <input type="text" placeholder="123" id="cvv"/>
+        </div>
+        <button id="pay-btn" type="submit">Proceed to pay</button>  
+    </form>
+    <div id="payment-message"> 
+    </div>
+    </div>
+    <script>
+        const payBtn = document.getElementById("pay-btn");
+        const paymentMessage = document.getElementById("payment-message")
+        const paymentForm = document.getElementById("payment-form")
+        const pay = () => {
+            const cardNumber = document.getElementById("card-number").value
+            if(cardNumber == "4242 4242 4242 4242"){
+                paymentMessage.style.display = "grid";
+                paymentForm.style.display = "none"
+                paymentMessage.innerHTML = `
+                    <h2 class="text-white">Payment Successful</h2>
+                    <div class="success-img"></div>
+                `
+            }
+            else{
+                paymentForm.style.display = "none"
+                paymentMessage.style.display = "grid";
+                paymentMessage.innerHTML = `
+                <img src"https://static-00.iconduck.com/assets.00/process-error-symbolic-icon-2048x2048-oqfn9h3m.png"> 
+                <h2 class="text-white">Payment Failed !</h2>
+                `
+            }
+        }
+        paymentForm.addEventListener("submit", (e)=>{
+            e.preventDefault()
+            pay()
+        });
+    </script>
+</body>
+</html>

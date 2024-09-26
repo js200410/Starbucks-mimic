@@ -172,11 +172,11 @@ justify-content: space-around;
 }
 .pop-msg{
         border-radius:5px;
-        box-shadow:2px 2px 10px #014c33;
         height:28vh;
         width:28vw;
-        background: #f7f2f2;
+        box-shadow:4px 5px 5px rgb(68, 120, 93);
         display: grid;
         justify-content: center;
+
         align-items: center;
 }   

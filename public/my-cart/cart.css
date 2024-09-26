@@ -4,10 +4,16 @@
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     overflow-x:hidden ;
+    background: rgb(132, 165, 132);
+
 }
 .cart-name-img{
     display: flex;
     gap:3vw;
+    width:10vw;
+}
+.total-price{
+    margin-top:18vh;
 }
 .cart-item-display{
     display: flex;
@@ -20,8 +26,15 @@ body{
     box-shadow:4px 5px 5px rgb(68, 120, 93);
     overflow: hidden;
     padding:1vh 1vw;
+    justify-content: center;
+    gap :9vw;
 
-
+}
+.b-i-b{
+    width:20vw;
+}
+.price{
+    display:inline
 }
 .cart{
     width:100%;
@@ -29,9 +42,7 @@ body{
     background:#e4f4e4;
     margin-top:10vh;
 }
-.cart-name-img,.cart-item-display p{
-    width:calc(100% / 3)
-}
+
 .cart-item-display input{
     width: 10vw;
     text-align: center;
@@ -41,7 +52,7 @@ body{
 }
 .flex{
     display: flex;
-    justify-content: space-around;
+    gap:4vw;
 }
 button{
     cursor: pointer;
@@ -59,7 +70,7 @@ button{
     position: fixed;
     z-index: 44;
     background:rgb(71, 115, 101);
-    top:0%;
+    top:-2%;
     left:0%;
  
    
@@ -109,4 +120,7 @@ button{
     color:black;
     font-weight:bold;
     border:none;
+}
+.total{
+    width:100vw;
 }

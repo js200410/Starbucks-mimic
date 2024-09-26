@@ -37,6 +37,9 @@ app.get('/Gift', (req, res) => {
 app.get('/my-cart', (req, res) => {
     res.sendFile(path.join(__dirname, 'public',"my-cart" ,'cart.html'));
 });
+app.get('/Pay', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public',"Pay" ,'pay.html'));
+});
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
